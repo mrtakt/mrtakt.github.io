@@ -272,6 +272,11 @@
         });
       </script>
       <script>
+        fetch("https://api.counterapi.dev/v1/yukiajja/Kunjungan").then(r => r.json()).then(data => {
+            document.getElementById('visits').innerHTML =  data.count
+        })
+      </script>
+      <script>
           window.setTimeout("waktu()", 1000);
           function waktu() {
             var d = new Date();
