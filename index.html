@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://ichikaa.xyz/file/zH3d2nD32Py9Nf67SA8r.jpg">
+    <meta name="description" content="Hello everyone">
+    <meta property="og:description" content="Hello everyone">
+    <meta property="og:site_name" content="Portofolio">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/notifikasi/cssnotifikasi.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/jpeg">
+    <title>Yuki Profile</title>
+  </head>
+  <body>
+    <center>
+    <a href="https://publishers.adsterra.com/referral/ndMB7WbTNd"><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/png/700%20x%2090%20px.png" align="middle" /></a>
+    </center>
+      <header class="profile container">
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="profile__container grid">
+          <div class="profile__data">
+            <div class="profile__border">
+              <div class="profile__perfil">
+                <img src="assets/img/yuki2.jpg" alt="ScarLet0x">
+              </div>
+            </div>
+            <h2 class="profile__name">Yuki</h2>
+            <h3 class="profile__profession">Belajar Hal Baru</h3>
+            <ul class="profile__social">
+              <a href="https://www.instagram.com/yuki21_" target="_blank" class="profile__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=6289626692456&text=Hello!" target="_blank" class="profile__social-link">
+                <i class="ri-whatsapp-line"></i>
+              </a>
+              <a href="https://facebook.com/yukisubagja" target="_blank" class="profile__social-link">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a class="profile__social-link" onclick="peringatan()">
+                <i class="ri-github-line"></i>
+              </a>
+            </ul>
+          </div>
+          
+          <div class="profile__info grid">
+            <div class="profile__info-group">
+              <h3 class="profile__info-number" id="JamSekarang"></h3>
+              <p class="profile__info-description">
+                Waktu <br> Sekarang
+              </p>
+            </div>
+            <div class="profile__info-group">
+              <h3 class="profile__info-number" id="UcapanSekarang"></h3>
+              <p class="profile__info-description">
+                <h2>Kawan</h2>
+              </p>
+            </div>
+            <div class="profile__info-group">
+              <h3 class="profile__info-number" id="visits"></h3>
+              <p class="profile__info-description">
+                Jumlah <br> Kunjungan
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="filters container">
+          <ul class="filters__content">
+            <button class="filters__button filter-tab-active" data-target="#projects">
+              Website
+            </button>
+            <button class="filters__button" data-target="#game">
+              Game
+            </button>
+            <button class="filters__button" data-target="#skills">
+              Skill
+            </button>
+            <button class="filters__button" data-target="#bot">
+              BOT
+            </button>
+          </ul>
+<!-------- WEBSITE -------->
+          <div class="filters__sections">
+            <div class="projects__content grid filters__active" data-content id="projects">
+              <article class="projects__card">
+                <img src="https://storage.yukkkiii.my.id/image/webblog.png" alt="Music Player" class="projects__img">
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Blog Nya Yuki</span>
+                    <h3 class="projects__title">Blogger</h3>
+                    <a href="https://blog.yukkkiii.my.id/" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects__card">
+                <img src="https://storage.yukkkiii.my.id/image/webmusic.png" alt="Music Player" class="projects__img">
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Pemutar Lagu Versi Web</span>
+                    <h3 class="projects__title">Music</h3>
+                    <a href="https://music.yukkkiii.my.id/" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+<!-------- Game -------->
+            <div class="projects__content grid " data-content id="game">
+              <article class="projects__card">
+                <img src="assets/img//game/zombiemayhem.png" alt="game" class="projects__img">
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Bunuh Zombie Hingga Akhir</span>
+                    <h3 class="projects__title">Zombie Mayhem</h3>
+                    <a href="/game/zombiemayhem" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects__card">
+                <img src="assets/img//game/coloron.png" alt="game" class="projects__img">
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Ubah Warna Dan Raih Skor Tertinggi</span>
+                    <h3 class="projects__title">Coloron</h3>
+                    <a href="/game/coloron" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects__card">
+                <img src="assets/img/game/copycat.png" alt="game" class="projects__img">
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Dengan Tema Puzzle Dengan Kucing<br>Bermain Menggunakan Komputer/Laptop</span>
+                    <h3 class="projects__title">Copycat</h3>
+                    <a href="/game/copycat" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects__card">
+                <img src="assets/img/game/menja.png" alt="game" class="projects__img">
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Seperti Fruit Ninja</span>
+                    <h3 class="projects__title">Menja</h3>
+                    <a href="/game/menja" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects__card">
+                <img src="assets/img/game/towerblock.png" alt="game" class="projects__img">
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Game Tumpuk Menumpuk</span>
+                    <h3 class="projects__title">Tower Block</h3>
+                    <a href="/game/towerblock" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects__card">
+                <img src="assets/img/game/bullseye.png" alt="game" class="projects__img">
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Panah Memanah</span>
+                    <h3 class="projects__title">BullsEye</h3>
+                    <a href="/game/bullseye" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+<!-------- SKILLS -------->
+            <div class="skills__content grid" data-content id="skills">
+              <div class="skills__area">
+                <h3 class="skills__title">Frontend Developer</h3>
+                <div class="skills__box">
+                  <div class="skills__group">
+                    <div class="skills__data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills__name">HTML</h3>
+                        <span class="skills__level">Dasar</span>
+                      </div>
+                    </div>
+                    <div class="skills__data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills__name">CSS</h3>
+                        <span class="skills__level">Dasar</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills__group">
+                    <div class="skills__data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills__name">JavaScript</h3>
+                        <span class="skills__level">Menengah</span>
+                      </div>
+                    </div>
+                    <div class="skills__data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills__name">Git</h3>
+                        <span class="skills__level">Menengah</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__area">
+                <h3 class="skills__title">Backend Developer</h3>
+                <div class="skills__box">
+                  <div class="skills__group">
+                    <div class="skills__data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills__name">MySQL</h3>
+                        <span class="skills__level">Dasar</span>
+                      </div>
+                    </div>
+                    <div class="skills__data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills__name">Firebase</h3>
+                        <span class="skills__level">Dasar</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills__group">
+                    <div class="skills__data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills__name">PHP</h3>
+                        <span class="skills__level">Dasar</span>
+                      </div>
+                    </div>
+                    <div class="skills__data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills__name">Node Js</h3>
+                        <span class="skills__level">Menengah</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-------- BOTS -------->
+            <div class="wrapper grid " data-content id="bot">  
+              <div class="table"> 
+                <div class="row header blue">
+                  <div class="cell">
+                    Nama Bot
+                  </div>
+                  <div class="cell">
+                    Platform
+                  </div>
+                  <div class="cell">
+                    Penggunaan
+                  </div>
+                  <div class="cell">
+                    Status
+                  </div>
+                  <div class="cell">
+                    Direct Bot
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="cell" data-title="name">
+                    Ayane Bot
+                  </div>
+                  <div class="cell" data-title="platform">
+                    Whatsapp
+                  </div>
+                  <div class="cell" data-title="Penggunaan">
+                    Ketik .menu
+                  </div>
+                  <div class="cell" data-title="status">
+                    Offline
+                  </div>
+                  <div class="cell" data-title="direct">
+                    <button class="filters__button">Kunjungi</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="cell" data-title="name">
+                    Downloader
+                  </div>
+                  <div class="cell" data-title="platform">
+                    Whatsapp
+                  </div>
+                  <div class="cell" data-title="Penggunaan">
+                    Kirimkan Link Videonya support Tiktok,Instagram,Facebook,Youtube
+                  </div>
+                  <div class="cell" data-title="status">
+                    Online
+                  </div>
+                  <div class="cell" data-title="direct">
+                    <button onclick="window.location.href = 'https://wa.me/6289653896400';" class="filters__button">Kunjungi</button>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="cell" data-title="name">
+                    Open Ai
+                  </div>
+                  <div class="cell" data-title="platform">
+                    Whatsapp
+                  </div>
+                  <div class="cell" data-title="Penggunaan">
+                    Kirimkan Apa Yang Ingin Di Tanyakan awali dengan .ai
+                  </div>
+                  <div class="cell" data-title="status">
+                    Online
+                  </div>
+                  <div class="cell" data-title="direct">
+                    <button onclick="window.location.href = 'https://chat.whatsapp.com/HPAYDpQdYMu9oH0ZorpGHy';" class="filters__button">Kunjungi</button>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="cell" data-title="name">
+                    Nh Pdf
+                  </div>
+                  <div class="cell" data-title="platform">
+                    Telegram
+                  </div>
+                  <div class="cell" data-title="Penggunaan">
+                    Kirimkan Kodenya
+                  </div>
+                  <div class="cell" data-title="status">
+                    Online
+                  </div>
+                  <div class="cell" data-title="direct">
+                    <button onclick="window.location.href = 'https://t.me/nhentaidlbot';" class="filters__button">Kunjungi</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-------- WEBSITE -------->
+<!-------- WEBSITE -------->
+<!-------- WEBSITE -------->
+<!-------- WEBSITE -------->
+<!-------- WEBSITE -------->
+          </div>
+        </section>
+      </main>
+      <footer class="footer container">
+        <span class="footer__copy">
+          &#169; Yukkkiii. All rigths reserved
+        </span>
+<!-- IKLAN -->
+        <script async="async" data-cfasync="false" src="//pl18120678.highperformancecpmgate.com/ec3f023170b9156d3c52b55f4e7f24bb/invoke.js"></script>
+      <div id="container-ec3f023170b9156d3c52b55f4e7f24bb"></div>
+<!-- IKLAN -->
+      </footer>
+      <script src="assets/js/scrollreveal.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+        function cb(response) {
+            document.getElementById('visits').innerText = response.value;
+        }
+      </script>
+      <script>
+          window.setTimeout("waktu()", 1000);
+         
+          function waktu() {
+            var d = new Date();
+          const jam = d.getHours();
+          const menit = d.getMinutes();
+          const detik = d.getSeconds();
+
+          var ucapanWaktu = 'Selamat Pagi'
+
+        if (jam >= '03' && jam <= '10') {       ucapanWaktu = 'Selamat Pagi'
+
+        } else if (jam >= '10' && jam <= '13') {
+
+        ucapanWaktu = 'Selamat Siang'
+
+        } else if (jam >= '13' && jam <= '18') {
+
+        ucapanWaktu = 'Selamat Sore'
+
+        } else if (jam >= '18' && jam <= '23') {
+
+        ucapanWaktu = 'Selamat Malam'
+
+        } else {
+
+        ucapanWaktu = 'Selamat Malam'
+
+        }                                     
+            setTimeout("waktu()", 1000);
+            document.getElementById("JamSekarang").innerHTML = jam +":"+ menit
+            document.getElementById("UcapanSekarang").innerHTML = ucapanWaktu
+            
+            
+          }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script async src="https://api.countapi.xyz/hit/yukkkiii.my.id/visits?callback=cb"></script>
+      <script src="assets/js/notif.js"></script>
+      <script src="assets/js/table.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="assets/css/notifikasi/jsnotifikasi.js"></script>  
+      <!--<script src="assets/css/notifikasi/tampilnotifikasi.js"></script>-->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6260290065503263" crossorigin="anonymous"></script>
+  </body>
+</html>
