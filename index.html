@@ -276,9 +276,9 @@
       <script src="assets/js/scrollreveal.min.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-        function cb(response) {
-            document.getElementById('visits').innerText = response.count;
-        }
+        $.getJSON("https://api.counterapi.dev/v1/yukiajja/Kunjungan", function(response) {
+            $("#visits").text(response.value);
+        });
       </script>
       <script>
           window.setTimeout("waktu()", 1000);
