@@ -255,23 +255,6 @@
       <script src="assets/js/scrollreveal.min.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-        $(document).ready(function () {
-            $.ajax({
-                method: "GET",
-                url: "https://api.counterapi.dev/v1/yukiajja/Kunjungan",
-                contentType: "application/json",
-                success: function (result) {
-                    if (result && result.count !== undefined) {
-                        $("#visits").text(result.count);
-                    }
-                },
-                error: function () {
-                    $("#visits").text("Error...");
-                },
-            });
-        });
-      </script>
-      <script>
         fetch("https://api.counterapi.dev/v1/yukiajja/Kunjungan").then(r => r.json()).then(data => {
             document.getElementById('visits').innerHTML =  data.count
         })
