@@ -255,8 +255,8 @@
       <script src="assets/js/scrollreveal.min.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-        var data = getJSON("https://api.counterapi.dev/v1/yukiajja/Kunjungan" );
-        document.getElementById("visits").innerHTML = data.count;
+        $.get(`https://api.counterapi.dev/v1/yukiajja/Kunjungan`, function(item) {
+        $('#visits').val(item.count);
       </script>
       <script>
           window.setTimeout("waktu()", 1000);
